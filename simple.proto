@@ -1,17 +1,17 @@
 syntax = "proto3";
 
-package helloworld;
+package simple;
 
 service Greeter {
-  rpc SayHello (HelloRequest) returns (HelloReply) {}
+  rpc SayHello (SimpleRequest) returns (SimpleReply) {}
 }
 
-message HelloRequest {
+message SimpleRequest {
   string name = 1;
   int32 id = 2;
 }
 
-message HelloReply {
+message SimpleReply {
   string name = 1;
   int32 id = 2;
   string greeting = 3;
